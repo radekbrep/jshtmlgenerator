@@ -5,3 +5,7 @@ npm install express
 
 to run 
 node server.js
+
+
+Make sure you are not clonning via https
+# git remote set-url origin git@github.com:radekbrep/jshtmlgenerator.git
