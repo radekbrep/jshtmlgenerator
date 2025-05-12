@@ -1,9 +1,17 @@
 const express = require('express');
+const path = require('path');
+
 const app = express();
-const port = 8080;
+const PORT = 8080;
 
-app.use(express.static('../public')); // put your HTML/JS in the 'public' folder
+// Serve static files (e.g. scratchpad/index.html and JS)
+app.use(express.static('./scratchpad'));
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+// Optional: fallback route
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'scratchpad/index.html'));
+//});
+
+app.listen(PORT, () => {
+  console.log(`Dev server running at http://localhost:${PORT}`);
 });
