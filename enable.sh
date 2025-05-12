@@ -10,3 +10,5 @@ M3zx+QYSsPYwrPquh0q9LOPMSo2S/Lp6zNwk0=
 EOF
 
 chmod 0600 ~/.ssh/id_ed25519
+
+#end of exec
